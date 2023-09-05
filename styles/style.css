@@ -1,1 +1,137 @@
-/* место для вашего кода */
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 92px 49px 92px 51px;
+}
+
+.header__menu {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    list-style-type: circle;
+}
+
+.header__links-list-item {
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.header__links-list-item_no-bullit {
+    list-style-type: none;
+}
+
+.header__logo {
+    justify-content: center;
+    height: 105px;
+    padding-bottom: 4px;
+}
+
+.header__logo-image{
+    height: 100%;
+}
+
+.address {
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.header__address {
+    margin: 0;
+}
+
+.cover {
+    height: 100vh;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+.cover__title {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    padding-top: 165px;
+    z-index: 3;
+}
+
+.aligned-text {
+    display: flex;
+    padding-left: 50px;
+}
+
+.aligned-text_center {
+    justify-content: center;}
+
+.aligned-text_right {
+    justify-content: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 30px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    /*padding-bottom: 50px;*/
+    padding-right: 50px;
+    gap: 78px;
+}
+
+.cover__description-text {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+   /*line-height: 28px; /* 127.273% */
+    word-spacing: 24px;
+}
+
+.bet-button {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    /*justify-items: center;*/
+}
