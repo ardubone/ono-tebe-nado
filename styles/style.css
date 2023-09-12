@@ -256,13 +256,13 @@
 /*линк смотреть больше*/
 
 .lots__look-more-link {
-    padding-left: 40px;
+    margin-left: 40px;
     font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0em;
-    text-decoration: underline;
+    border-bottom: #000 1px solid;
 }
 
 /*секция об аукционе*/
@@ -311,13 +311,15 @@
 }
 
 .about__text {
+    display: flex;
+    flex-direction: column;
     color: #000;
     font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 25px;
+    gap: 25px;
 }
 
 /*Футер*/
