@@ -85,6 +85,8 @@
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: -1;
 }
 
 .cover__title {
@@ -96,6 +98,7 @@
     letter-spacing: 30px;
     text-transform: uppercase;
     padding-top: 165px;
+    position: relative;
 }
 
 .aligned-text {
@@ -138,6 +141,7 @@
     padding-top: 135px;
     padding-right: 50.5px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .cover__description-text {
@@ -168,6 +172,8 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 0;
 }
 
 /*вторая секция ЛОТЫ*/
@@ -204,17 +210,14 @@
 	width: 430px;
 }
 
-.card .overlay {
-    padding: 50px 40px;
+.card {
+    /*padding: 50px 40px;*/
 	height: 450px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-
-}
-
-.card {
     background-size: cover;
+    position: relative;
 }
 
 .card_type_film {
@@ -232,6 +235,7 @@
 /*текс на карточках*/
 
 .card__title {
+    margin: 50px 40px 0 40px;
     position: relative;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
@@ -244,6 +248,7 @@
 }
 
 .card__text {
+    margin: 0 40px 50px 40px;
     position: relative;
     font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
